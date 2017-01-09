@@ -22,7 +22,7 @@ public class Shop {
     /**
      *
      */
-    private Employee employee;
+    private List<Employee> employees;
 
     /**
      *
@@ -44,8 +44,8 @@ public class Shop {
      *
      * @return
      */
-    public Employee getEmployee() {
-        return employee;
+    public List<Employee> getEmployees() {
+        return employees;
     }
 
     /**
