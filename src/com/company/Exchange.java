@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.models.Shop;
+import com.company.models.items.Shop;
 import com.company.models.people.Customer;
 
 /**

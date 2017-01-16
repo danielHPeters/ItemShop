@@ -1,4 +1,4 @@
-package com.company.models;
+package com.company.models.items;
 
 /**
  * Created by Daniel on 09.01.2017.

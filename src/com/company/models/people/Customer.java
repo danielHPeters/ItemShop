@@ -1,6 +1,6 @@
 package com.company.models.people;
 
-import com.company.models.Item;
+import com.company.models.items.Item;
 
 import java.util.ArrayList;
 import java.util.Date;

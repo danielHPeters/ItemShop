@@ -1,4 +1,4 @@
-package com.company.models;
+package com.company.models.items;
 
 import com.company.models.people.Employee;
 
