@@ -8,17 +8,17 @@ import java.util.Date;
 public class Person {
 
     /**
-     *
+     * Name of the person
      */
     private String name;
 
     /**
-     *
+     * Birthdate of the person
      */
     private Date birthDate;
 
     /**
-     *
+     * Default constructor. Sets name and birthdate of the Person
      * @param name
      * @param birthDate
      */
@@ -28,16 +28,16 @@ public class Person {
     }
 
     /**
-     *
-     * @return
+     * Getter for name of Person
+     * @return name of the Person
      */
     public String getName() {
         return name;
     }
 
     /**
-     *
-     * @return
+     * Function to calculate the age of the Person based on birthdate
+     * @return the current age of the person
      */
     public int calcAge(){
         return 10;

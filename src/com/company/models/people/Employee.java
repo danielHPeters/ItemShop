@@ -10,13 +10,31 @@ public class Employee extends Person {
     private String status;
 
     /**
-     *
      * @param name
      * @param birthDate
      */
     public Employee(String name, Date birthDate, String status) {
 
         super(name, birthDate);
+
+        this.status = status;
+
+    }
+
+    /**
+     * Getter for the status of the employee
+     * @return the current status of the employee
+     */
+    public String getStatus() {
+        return status;
+    }
+
+    /**
+     * Greeting customer
+     */
+    public void greetCustomer() {
+
+        System.out.println("Welcome. How can I help you?");
 
     }
 }
