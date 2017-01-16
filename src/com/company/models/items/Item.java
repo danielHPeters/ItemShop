@@ -6,27 +6,27 @@ package com.company.models.items;
 public abstract class Item {
 
     /**
-     *
+     * Base prise of the item
      */
     private double price;
 
     /**
-     *
+     * Name of the item
      */
     private String name;
 
     /**
-     *
+     * Details about item
      */
     private String details;
 
     /**
-     *
+     * price drop from 0 to 100 (percentage by which the price will be reduced)
      */
     private int priceDrop;
 
     /**
-     * Default constructor
+     * Default constructor. Sets the base price, name, details, and the current price drop
      *
      * @param price
      * @param name
@@ -41,7 +41,6 @@ public abstract class Item {
     }
 
     /**
-     *
      * @return
      */
     public double getPrice() {
@@ -49,7 +48,6 @@ public abstract class Item {
     }
 
     /**
-     *
      * @return
      */
     public String getName() {
@@ -57,7 +55,6 @@ public abstract class Item {
     }
 
     /**
-     *
      * @return
      */
     public String getDetails() {
@@ -65,7 +62,6 @@ public abstract class Item {
     }
 
     /**
-     *
      * @param price
      */
     public void setPrice(double price) {
