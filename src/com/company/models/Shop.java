@@ -2,6 +2,7 @@ package com.company.models;
 
 import com.company.models.people.Employee;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,6 +27,16 @@ public class Shop {
 
     /**
      *
+     */
+    public Shop() {
+
+        this.stock = new ArrayList<>();
+        this.consumableStock = new ArrayList<>();
+        this.employees = new ArrayList<>();
+
+    }
+
+    /**
      * @return
      */
     public List<Item> getStock() {
@@ -33,7 +44,6 @@ public class Shop {
     }
 
     /**
-     *
      * @return
      */
     public List<Consumable> getConsumableStock() {
@@ -41,7 +51,6 @@ public class Shop {
     }
 
     /**
-     *
      * @return
      */
     public List<Employee> getEmployees() {
@@ -49,7 +58,6 @@ public class Shop {
     }
 
     /**
-     *
      * @param stock
      */
     public void setStock(List<Item> stock) {
@@ -57,7 +65,6 @@ public class Shop {
     }
 
     /**
-     *
      * @param consumableStock
      */
     public void setConsumableStock(List<Consumable> consumableStock) {
