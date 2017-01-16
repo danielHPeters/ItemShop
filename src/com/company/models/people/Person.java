@@ -40,6 +40,6 @@ public class Person {
      * @return
      */
     public int calcAge(){
-
+        return 10;
     }
 }
