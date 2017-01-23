@@ -8,6 +8,8 @@ import com.company.models.people.Customer;
  */
 public class Exchange {
 
+    private boolean shopping;
+
     /**
      * Reference to the shop object
      */
@@ -19,14 +21,30 @@ public class Exchange {
     private Customer customer;
 
     /**
-     *
      * @param shop
      * @param customer
      */
-    public Exchange (Shop shop, Customer customer){
+    public Exchange(Shop shop, Customer customer) {
 
         this.shop = shop;
         this.customer = customer;
+
+    }
+
+    /**
+     *
+     */
+    public void exchangeLoop() {
+
+        this.shop.getEmployees().get(0).greetCustomer();
+
+        while (shopping) {
+
+            if (true){
+                shopping = false;
+            }
+
+        }
 
     }
 

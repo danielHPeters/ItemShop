@@ -13,22 +13,22 @@ import java.text.SimpleDateFormat;
 public class Main {
 
     /**
-     *
+     * Format for parsing dates
      */
     private DateFormat format;
 
     /**
-     *
+     * Customer of the shop
      */
     private Customer customer;
 
     /**
-     *
+     * The shop
      */
     private Shop shop;
 
     /**
-     *
+     * Exchange functionality between shop and customer
      */
     private Exchange exch;
 
