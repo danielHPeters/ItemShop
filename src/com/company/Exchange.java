@@ -1,9 +1,12 @@
 package com.company;
 
+import com.company.models.items.Item;
 import com.company.models.items.Shop;
 import com.company.models.people.Customer;
 
 /**
+ * Here the shop and the customer meet to exchange items and maybe have a conversation
+ *
  * Created by Daniel on 09.01.2017.
  */
 public class Exchange {
@@ -21,6 +24,8 @@ public class Exchange {
     private Customer customer;
 
     /**
+     * Default constructor. Initializes references to the shop and customer objects
+     *
      * @param shop
      * @param customer
      */
@@ -28,11 +33,12 @@ public class Exchange {
 
         this.shop = shop;
         this.customer = customer;
+        this.shopping = true;
 
     }
 
     /**
-     *
+     * Loop for customer and shop exchange. When the customer decides to leave then end the loop
      */
     public void exchangeLoop() {
 
@@ -40,9 +46,16 @@ public class Exchange {
 
         while (shopping) {
 
-            if (true){
-                shopping = false;
+            System.out.println("The customer is looking around.");
+
+            if (customer.isLeaving()){
+
+                System.out.println("The customer is leving");
+                this.shopping = false;
+
             }
+
+            customer.wantsToLeave();
 
         }
 

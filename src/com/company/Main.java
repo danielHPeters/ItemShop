@@ -2,13 +2,14 @@ package com.company;
 
 import com.company.models.items.Shop;
 import com.company.models.people.Customer;
+import com.company.models.people.Employee;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
- *
+ * Testing of this program here.
  */
 public class Main {
 
@@ -41,7 +42,8 @@ public class Main {
 
             this.format = new SimpleDateFormat("dd.MM.yyyy");
             this.shop = new Shop();
-            this.customer = new Customer("Randy", this.format.parse("09.12.2016"), 200);
+            this.shop.getEmployees().add(new Employee("Alex", this.format.parse("11.11.1981"), "Available"));
+            this.customer = new Customer("Randy", this.format.parse("09.12.1999"), 200);
             this.exch = new Exchange(this.shop,this.customer);
 
         } catch (ParseException e){
@@ -57,6 +59,9 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
+
         Main program = new Main();
+        program.exch.exchangeLoop();
+
     }
 }

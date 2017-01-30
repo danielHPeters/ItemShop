@@ -3,6 +3,8 @@ package com.company.models.people;
 import java.util.Date;
 
 /**
+ * Template for humanoids
+ *
  * Created by Daniel on 09.01.2017.
  */
 public class Person {

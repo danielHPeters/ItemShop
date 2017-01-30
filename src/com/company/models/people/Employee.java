@@ -3,15 +3,22 @@ package com.company.models.people;
 import java.util.Date;
 
 /**
+ * Representation of employees working in the shop
+ *
  * Created by Daniel on 09.01.2017.
  */
 public class Employee extends Person {
 
+    /**
+     * Status of the employee. (busy, available, sick etc.)
+     */
     private String status;
 
     /**
-     * @param name
-     * @param birthDate
+     * Default constructor
+     *
+     * @param name name of the employee
+     * @param birthDate birthday of the employee
      */
     public Employee(String name, Date birthDate, String status) {
 

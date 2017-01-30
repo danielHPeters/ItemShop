@@ -1,6 +1,8 @@
 package com.company.models.items;
 
 /**
+ * Template for items to be sold in the shop
+ *
  * Created by Daniel on 09.01.2017.
  */
 public abstract class Item {
@@ -41,37 +43,45 @@ public abstract class Item {
     }
 
     /**
-     * @return
+     * Get the price of this item
+     *
+     * @return the price of this item
      */
     public double getPrice() {
         return price;
     }
 
     /**
-     * @return
+     * Get the name of this item
+     *
+     * @return the name of this item
      */
     public String getName() {
         return name;
     }
 
     /**
-     * @return
+     * Get the details of this item
+     *
+     * @return the details of this item
      */
     public String getDetails() {
         return details;
     }
 
     /**
-     * @param price
+     * Set the price of this item
+     *
+     * @param price new price
      */
     public void setPrice(double price) {
         this.price = price;
     }
 
     /**
-     *
+     * Calculate the price including reductions
      */
-    public void calcPriceDrop() {
+    public void calcPrice() {
         this.price = this.price - (this.price * this.priceDrop);
     }
 }

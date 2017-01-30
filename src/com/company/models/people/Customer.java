@@ -7,12 +7,14 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * Representation of a customer
+ *
  * Created by Daniel on 09.01.2017.
  */
 public class Customer extends Person {
 
     /**
-     *
+     * Inventory of the customer (only objects of type Item)
      */
     private List<Item> inventory;
 
@@ -22,6 +24,11 @@ public class Customer extends Person {
     private double cash;
 
     /**
+     * Boolean flag for when the customer wants to leave the store
+     */
+    private boolean leaving;
+
+    /**
      * @param name
      * @param birthDate
      */
@@ -29,6 +36,7 @@ public class Customer extends Person {
         super(name, birthDate);
         this.inventory = new ArrayList<>();
         this.cash = cash;
+        this.leaving = false;
     }
 
     /**
@@ -61,5 +69,16 @@ public class Customer extends Person {
      */
     public void setCash(double cash) {
         this.cash = cash;
+    }
+
+    /**
+     * Check if the customer wants to leabe
+     */
+    public boolean isLeaving(){
+        return this.leaving;
+    }
+
+    public void wantsToLeave(){
+        this.leaving = true;
     }
 }
