@@ -1,5 +1,2 @@
-# ItemShop
-Item Shop School project
-
-##
-A simple Java Simulation of a Shop
+# item-shop
+A simple Java simulation of a shop.
