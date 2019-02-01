@@ -6,7 +6,7 @@ import ch.peters.daniel.itemshop.models.person.Customer;
 /**
  * Here the shop and the customer meet to exchange items and maybe have a conversation.
  *
- * @author Daniel Peters <daniel.peters.ch@gmail.com>
+ * @author Daniel Peters
  * @version 1.0
  */
 public class Exchange {
